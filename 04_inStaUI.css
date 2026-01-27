@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrapper{
+    width: 100%;
+    position: relative;
+    background-color:white ;
+   padding: 20px;
+}
+.instacontainer{
+width: 100%;
+height: 100vh;
+display: flex;
+border-radius: 30px;
+}
+.leftdiv{
+    width: 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.rightdiv{
+    width:75%;
+    background:#F6F6F6;
+    border-radius:30px;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+}
+
+
+.insta{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    
+}
+.insta svg{
+    height: 40px;
+}
+.insta p{
+    font-size:30px ;
+    font-family:sans-serif ;
+}
+.seconddiv{
+    width: 100%;
+}
+.content{
+height: 200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+}
+.cir{
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+}
+.cir img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.seconddiv h1{
+    font-size: 22px;
+}
+.seconddiv p{
+    font-size: 18px;
+}
+.thirddiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;  
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.count{
+    font-weight: 700; 
+    font-size: 18px;
+}
+.fourthdiv{
+    width: 100%;
+    padding: 20px;
+    
+}
+.name{
+    width: 100%;
+    font-weight: 700;
+}
+.describe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.fifthdiv{
+    width: 100%;
+    position: relative;
+}
+.div1{
+    width: 100%;
+    padding: 5px;
+    font-weight: 800;
+}
+.div2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+     padding: 10px;
+     scrollbar-width: none;
+}
+.circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.circles{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    border-radius: 50px;
+    flex-shrink: 0; 
+    margin: 10px;
+}
+.circles img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.sixthdiv{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 12px;        
+    padding: 15px 15px;
+}
+.icons p{
+    font-weight: 1000;
+}
+@media (max-width: 748px) {
+
+  .instacontainer{
+    flex-direction: column;
+  }
+
+  .leftdiv{
+    width: 100%;
+  }
+
+  .rightdiv{
+    display: none;
+  }
+
+  .insta{
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  .insta svg{
+    height: 22px;
+  }
+
+  .insta p{
+    font-size: 18px;
+  }
+
+  .content{
+    height: auto;         
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .cir{
+    height: 60px;
+    width: 60px;
+  }
+
+  .seconddiv h1{
+    font-size: 16px;
+  }
+
+  .seconddiv p{
+    font-size: 13px;
+  }
+
+  .thirddiv{
+    padding: 10px;
+  }
+
+  .count{
+    font-size: 13px;
+  }
+
+  .label{
+    font-size: 11px;
+  }
+
+  .fourthdiv{
+    padding: 12px;
+  }
+
+  .describe{
+    justify-content: flex-start;
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .div1{
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .div2{
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .circles{
+    height: 36px;
+    width: 36px;
+    margin: 6px;
+  }
+
+  .icons{
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .icons p{
+    font-size: 13px;
+  }
+}
+.topfirst{
+  width: 100%;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 30px;
+  
+}
+.Search input{
+  border-radius: 30px;
+  border: none;
+  padding: 5px;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.nav button i{
+  margin-right: 6px;
+  color: white;
+}
+.nav button{
+  border-radius: 40px;
+  border: none;
+  padding: 8px 14px;
+ background-color:#ED0B6C;
+ color: white;
+ font-size: 14px;
+}
+.nav button:hover{
+background-color:#F04632;
+}
+.topsecond{
+width:100% ;
+background-color: #F6F6F6;
+border-radius: 30px;
+padding-left: 18px;
+}
+.text{
+  font-weight: 600;
+  font-size: 25px;
+}
+.storiescircles{
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  padding: 15px;
+}
+
+.stories{
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.stories img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border:3px solid #E3126E ;
+  padding: 1px;
+}
+
+.posts img{
+  height: 200px;
+  width: 200px;
+}
+.topthird{
+  max-width:600px;
+  margin:auto;
+}
+
+.Feed{
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 1000;
+}
+.postname{
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+}
+.postcircle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.identity{
+  font-size: 20px;
+  font-weight: 600;
+}
+.postcircle img{
+  height: 100%;
+  width: 100%;
+border-radius: 50px;
+border: 3px solid  #E3126E;
+padding: 1px;
+}
+.photocontain{
+  background:white;
+  border-radius:16px;
+  margin-bottom:25px;
+  padding-bottom:10px;
+}
+
+.photu img{
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+.likes{
+display: flex;
+align-items: center;
+gap: 30px;
+padding: 10px;
+}
+.caption{
+  display: flex;
+  flex-direction: column;
+  
+}
+.caption h1{
+  font-size: 20px;
+  padding: 2px;
+}
+.caption p{
+  height: 15px;
+  padding: 3px;
+}
+.containu{
+  flex:1;
+  overflow-y:auto;
+  min-height:0;
+}
+
+
+
